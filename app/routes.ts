@@ -6,8 +6,5 @@ import {
 } from "@react-router/dev/routes";
 
 export default [
-  layout("layout/main/main.layout.tsx", [
-    index("pages/home/home.tsx"),
-    route("home", "pages/home/redirect.home.tsx"),
-  ]),
+  layout("layout/main/main.layout.tsx", [index("pages/home/home.tsx")]),
 ] satisfies RouteConfig;
