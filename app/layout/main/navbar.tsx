@@ -11,7 +11,11 @@ export function Navbar() {
     <nav className="flex p-4 justify-between items-center border-b border-primary/10 bg-primary/10">
       {/* Left side: logo */}
       <div className="flex items-center gap-2">
-        <img className="w-10 h-10" src="/logo.svg" alt="Streakly logo" />
+        <img
+          className="w-10 h-10"
+          src="/streakly_logo.svg"
+          alt="Streakly logo"
+        />
         <div className="flex flex-col">
           <h1 className="text-lg font-semibold">Streakly</h1>
           <p className="-mt-1 text-subtitle text-sm">
@@ -28,11 +32,15 @@ export function Navbar() {
       >
         <Sun
           strokeWidth={2.5}
-          className={`p-1.5 h-7 w-7 text-primary ${theme === Theme.light ? activeIcon : ""}`}
+          className={`p-1.5 h-7 w-7 text-primary ${
+            theme === Theme.light ? activeIcon : ""
+          }`}
         />
         <MoonStar
           strokeWidth={2.5}
-          className={`p-1.5 h-7 w-7 text-primary-dark ${theme === Theme.dark ? activeIcon : ""}`}
+          className={`p-1.5 h-7 w-7 text-primary-dark ${
+            theme === Theme.dark ? activeIcon : ""
+          }`}
         />
       </button>
     </nav>
