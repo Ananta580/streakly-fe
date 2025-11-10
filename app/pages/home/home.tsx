@@ -8,5 +8,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function HomePage() {
-  return <div className="p-4"></div>;
+  return <div className="p-10"></div>;
 }

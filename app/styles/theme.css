@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+
+  --color-background: #f0f4ea;
+  --color-primary: #88aa00;
+  --color-primary-dark: #446600;
+
+  --color-title-light: #ffffff;
+  --color-title-dark: #111111;
+  --color-title: #333333;
+  --color-subtitle: #777777;
+}
+
+@layer theme {
+  .dark {
+    --color-background: #000900;
+    --color-title-light: #111111;
+    --color-title-dark: #ffffff;
+    --color-title: #dddddd;
+    --color-subtitle: #aaaaaa;
+  }
+}
